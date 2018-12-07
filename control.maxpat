@@ -38,6 +38,162 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 67.0, 110.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 126.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "$1 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 50.0, 153.0, 55.0, 22.0 ],
+									"style" : "",
+									"text" : "ej.line 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 50.0, 100.0, 83.0, 22.0 ],
+									"style" : "",
+									"text" : "snapshot~ 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-19",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-20",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 235.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 324.5, 852.0, 71.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p smoother"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -491,162 +647,6 @@
 					}
 ,
 					"patching_rect" : [ 498.5, 852.0, 71.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"style" : "",
-						"tags" : ""
-					}
-,
-					"style" : "",
-					"text" : "p smoother"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 5,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 126.0, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "$1 10"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 50.0, 153.0, 55.0, 22.0 ],
-									"style" : "",
-									"text" : "ej.line 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 50.0, 100.0, 83.0, 22.0 ],
-									"style" : "",
-									"text" : "snapshot~ 10"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-19",
-									"index" : 1,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-20",
-									"index" : 1,
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 235.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 324.5, 852.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1125,21 +1125,6 @@
 ,
 					"style" : "",
 					"text" : "p smoother"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-2",
-					"linecount" : 2,
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 73.0, 317.0, 150.0, 48.0 ],
-					"text" : "/rotary/02/velocity : 0"
 				}
 
 			}
@@ -2348,9 +2333,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 337.0, 262.0, 109.0, 22.0 ],
+					"patching_rect" : [ 337.0, 262.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "scale~ 0 127 0.5 1"
+					"text" : "scale~ 0 127 0 1"
 				}
 
 			}
@@ -2490,16 +2475,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -2772,6 +2748,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-145", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"midpoints" : [ 136.5, 87.0, 315.0, 87.0, 315.0, 648.0, 334.0, 648.0 ],
 					"order" : 15,
@@ -2948,13 +2931,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-94", 0 ],
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-27", 0 ]
 				}
@@ -3083,6 +3059,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-94", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -3361,7 +3344,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-95", 0 ]
 				}
 
@@ -3387,278 +3370,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.io.quneo.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.pad.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.hslide.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.vslide.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.rot.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.lrarrow.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.udarrow.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.transport.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.rslider.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.o.num~.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.loadbang.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "function_pad.maxpat",
-				"bootpath" : "~/Documents/Patches/finalproj",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.o.gui.table.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/gui",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.gather.select.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/gatherers",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.o.phase.points~.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "phase.points2.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.deferlow.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.phase~.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shot-ms-phasor.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.accum.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/gatherers",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.display.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.pad.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.mfilter.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.vslide.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.arrow.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.hslide.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.rot.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.rpressure.js",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.ui.rslider.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ej.line.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/Packages/ejies_3.2.4/patchers",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/ejies_3.2.4/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.pack.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.select.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.route.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.cond.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.prepend.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.union.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.compose.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "list-accum.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.collect.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.if.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.var.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.display.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
