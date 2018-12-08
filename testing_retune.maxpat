@@ -38,15 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-28",
+					"linecount" : 4,
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 655.0, 642.0, 532.0, 73.0 ],
+					"text" : "/slider/vert/01/velocity ??= 0,\n/slider/vert/02/velocity ??= 0,\n/slider/vert/03/velocity ??= 0,\n/slider/vert/04/velocity ??= 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
-					"patching_rect" : [ 156.088135, 501.0, 61.0, 22.0 ],
+					"patching_rect" : [ 156.088135, 531.0, 61.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"notebase" : 0,
-						"notelist" : [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100 ],
+						"notelist" : [ 1.125, 1.265625, 1.333333, 1.5, 1.6875, 1.898438 ],
 						"pitchdetection" : 0,
 						"quality" : "basic",
 						"reportlatency" : 0,
@@ -91,13 +106,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-10",
-					"linecount" : 70,
+					"linecount" : 79,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1284.0, 137.993896, 150.0, 972.0 ],
-					"text" : "/pad/01/velocity : 0,\n/pad/01/x : 59,\n/pad/01/y : 87,\n/pad/01/z : 62,\n/pad/06/velocity : 0,\n/pad/06/x : 42,\n/pad/06/y : 21,\n/pad/06/z : 0,\n/pad/02/velocity : 0,\n/pad/02/x : 89,\n/pad/02/y : 64,\n/pad/02/z : 96,\n/pad/03/velocity : 0,\n/pad/03/x : 73,\n/pad/03/y : 94,\n/pad/03/z : 0,\n/pad/10/velocity : 0,\n/pad/10/x : 68,\n/pad/10/y : 56,\n/pad/10/z : 0,\n/pad/07/velocity : 0,\n/pad/07/x : 42,\n/pad/07/y : 49,\n/pad/07/z : 0,\n/pad/04/velocity : 0,\n/pad/04/x : 101,\n/pad/04/y : 42,\n/pad/04/z : 0,\n/pad/09/velocity : 0,\n/pad/09/x : 92,\n/pad/09/y : 42,\n/pad/09/z : 54,\n/pad/08/velocity : 0,\n/pad/08/x : 38,\n/pad/08/y : 26,\n/pad/08/z : 0,\n/pad/13/velocity : 0,\n/pad/13/x : 85,\n/pad/13/y : 82,\n/pad/13/z : 0,\n/pad/11/velocity : 0,\n/pad/11/x : 24,\n/pad/11/y : 47,\n/pad/11/z : 0,\n/pad/05/velocity : 0,\n/pad/05/x : 56,\n/pad/05/y : 54,\n/pad/05/z : 0,\n/pad/12/velocity : 0,\n/pad/12/x : 80,\n/pad/12/y : 42,\n/pad/12/z : 0,\n/pad/14/velocity : 0,\n/pad/14/x : 54,\n/pad/14/y : 7,\n/pad/14/z : 0"
+					"patching_rect" : [ 1480.0, 144.993896, 150.0, 1094.0 ],
+					"text" : "/pad/14/velocity : 0,\n/pad/14/x : 85,\n/pad/14/y : 49,\n/pad/14/z : 0,\n/pad/01/velocity : 0,\n/pad/01/x : 75,\n/pad/01/y : 24,\n/pad/01/z : 62,\n/pad/15/velocity : 0,\n/pad/15/x : 75,\n/pad/15/y : 94,\n/pad/15/z : 0,\n/pad/10/velocity : 0,\n/pad/10/x : 94,\n/pad/10/y : 101,\n/pad/10/z : 0,\n/pad/03/velocity : 0,\n/pad/03/x : 73,\n/pad/03/y : 78,\n/pad/03/z : 0,\n/pad/02/velocity : 0,\n/pad/02/x : 127,\n/pad/02/y : 73,\n/pad/02/z : 53,\n/pad/11/velocity : 0,\n/pad/11/x : 75,\n/pad/11/y : 56,\n/pad/11/z : 0,\n/pad/07/velocity : 0,\n/pad/07/x : 68,\n/pad/07/y : 99,\n/pad/07/z : 0,\n/pad/06/velocity : 0,\n/pad/06/x : 28,\n/pad/06/y : 92,\n/pad/06/z : 0,\n/pad/13/velocity : 0,\n/pad/13/x : 24,\n/pad/13/y : 45,\n/pad/13/z : 0,\n/pad/09/velocity : 0,\n/pad/09/x : 71,\n/pad/09/y : 35,\n/pad/09/z : 54,\n/pad/04/velocity : 0,\n/pad/04/x : 75,\n/pad/04/y : 73,\n/pad/04/z : 0,\n/slider/horiz/04/velocity : 0,\n/slider/horiz/04/x : 94,\n/pad/08/velocity : 0,\n/pad/08/x : 38,\n/pad/08/y : 26,\n/pad/08/z : 0,\n/pad/05/velocity : 0,\n/pad/05/x : 56,\n/pad/05/y : 54,\n/pad/05/z : 0,\n/pad/12/velocity : 0,\n/pad/12/x : 80,\n/pad/12/y : 42,\n/pad/12/z : 0"
 				}
 
 			}
@@ -108,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 766.0, 178.0, 22.0 ],
+					"patching_rect" : [ 380.0, 802.993896, 178.0, 22.0 ],
 					"style" : "",
 					"text" : "bang"
 				}
@@ -119,13 +134,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-37",
-					"linecount" : 36,
+					"linecount" : 35,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 655.0, 134.0, 532.0, 508.0 ],
-					"text" : "/pad/01/velocity ??= 0,\n/pad/02/velocity ??= 0,\n/pad/03/velocity ??= 0,\n/pad/04/velocity ??= 0,\n/pad/05/velocity ??= 0,\n/pad/06/velocity ??= 0,\n/pad/07/velocity ??= 0,\n/pad/08/velocity ??= 0,\n/pad/09/velocity ??= 0,\n/pad/10/velocity ??= 0,\n/pad/11/velocity ??= 0,\n/pad/12/velocity ??= 0,\n/pad/13/velocity ??= 0,\n/pad/14/velocity ??= 0,\n/pad/15/velocity ??= 0,\n/pad/16/velocity ??= 0,\n/slider/vert/01/y ??= 0,\n# /value = scale(/slider/vert/01/y, 0., 127., 36, 47),\n# /scale = if (/pad/01/velocity > 0, [/value, 100], [/value, 0])\n\n/scale = if (/pad/01/velocity > 0, [flush],\n         if (/pad/02/velocity > 0, [36, 1],\n         if (/pad/03/velocity > 0, [37, 1],\n         if (/pad/04/velocity > 0, [38, 1],\n         if (/pad/05/velocity > 0, [39, 1],\n         if (/pad/06/velocity > 0, [40, 1],\n         if (/pad/07/velocity > 0, [41, 1],\n         if (/pad/08/velocity > 0, [42, 1],\n         if (/pad/09/velocity > 0, [43, 1],\n         if (/pad/10/velocity > 0, [44, 1],\n         if (/pad/11/velocity > 0, [45, 1],\n         if (/pad/12/velocity > 0, [46, 1],\n         if (/pad/13/velocity > 0, [47, 1],\n         if (/pad/14/velocity > 0, [48, 1],\n         if (/pad/15/velocity > 0, [49, 1],\n         if (/pad/16/velocity > 0, [50, 1], []))))))))))))))))"
+					"patching_rect" : [ 655.0, 133.0, 756.0, 494.0 ],
+					"text" : "/pad/01/velocity ??= 0,\n/pad/02/velocity ??= 0,\n/pad/03/velocity ??= 0,\n/pad/04/velocity ??= 0,\n/pad/05/velocity ??= 0,\n/pad/06/velocity ??= 0,\n/pad/07/velocity ??= 0,\n/pad/08/velocity ??= 0,\n/pad/09/velocity ??= 0,\n/pad/10/velocity ??= 0,\n/pad/11/velocity ??= 0,\n/pad/12/velocity ??= 0,\n/pad/13/velocity ??= 0,\n/pad/14/velocity ??= 0,\n/pad/15/velocity ??= 0,\n/pad/16/velocity ??= 0,\n/slider/vert/01/y ??= 0,\n# /value = scale(/slider/vert/01/y, 0., 127., 36, 47),\n\n/scale = if (/pad/01/velocity > 0, [flush],\n         if (/pad/02/velocity > 0, [36, 1],\n         if (/pad/03/velocity > 0, [37, 1],\n         if (/pad/04/velocity > 0, [38, 1],\n         if (/pad/05/velocity > 0, [39, 1],\n         if (/pad/06/velocity > 0, [40, 1],\n         if (/pad/07/velocity > 0, [41, 1],\n         if (/pad/08/velocity > 0, [42, 1],\n         if (/pad/09/velocity > 0, [43, 1],\n         if (/pad/10/velocity > 0, [44, 1],\n         if (/pad/11/velocity > 0, [45, 1],\n         if (/pad/12/velocity > 0, [46, 1],\n         if (/pad/13/velocity > 0, [47, 1],\n         if (/pad/14/velocity > 0, [notelist, 9. / 8, 81. / 64, 4. / 3, 3. / 2, 27. / 16, 243. / 128],\n         if (/pad/15/velocity > 0, [49, 1],\n         if (/pad/16/velocity > 0, [50, 1], []))))))))))))))))"
 				}
 
 			}
@@ -151,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 498.0, 693.0, 83.0, 22.0 ],
+					"patching_rect" : [ 489.0, 729.993896, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /scale"
 				}
@@ -177,7 +192,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 612.0, 52.0, 114.0, 22.0 ],
+					"patching_rect" : [ 655.0, 43.0, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "o.io.quneo QUNEO"
 				}
@@ -340,8 +355,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-28", 0 ],
 					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
