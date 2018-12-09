@@ -54,9 +54,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 698.0, 184.0, 114.0, 22.0 ],
+					"patching_rect" : [ 694.0, 184.0, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "send return_control"
+					"text" : "send retune_control"
 				}
 
 			}
@@ -626,7 +626,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 499.0, 227.0, 640.0, 480.0 ],
+						"rect" : [ 512.0, 420.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -653,14 +653,41 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 275.0, 92.0, 95.0, 22.0 ],
+									"style" : "",
+									"text" : "r retune_control"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 207.0, 133.0, 87.0, 22.0 ],
+									"style" : "",
+									"text" : "testing_retune"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 207.0, 146.0, 65.0, 22.0 ],
+									"patching_rect" : [ 207.0, 194.0, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "live_audio"
 								}
@@ -696,7 +723,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -705,6 +732,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -860,6 +901,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-15::obj-4::obj-54" : [ "live.gain~[9]", "live.gain~", 0 ],
 			"obj-15::obj-3::obj-37" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
@@ -993,6 +1035,13 @@
 				"name" : "ej.line.maxpat",
 				"bootpath" : "C:/ProgramData/Max 7/Packages/ejies_3.2.4/patchers",
 				"patcherrelativepath" : "../../../../../ProgramData/Max 7/Packages/ejies_3.2.4/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "testing_retune.maxpat",
+				"bootpath" : "~/Documents/Patches/finalproj",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
